@@ -3,169 +3,6 @@
 <html>
 <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
 <style>
-@media (min-width: 1281px) {
-	
-div#container {
-    width:100%;
-    height: 200px;
-    overflow:hidden;     /* if you don't want a scrollbar, set to hidden */
-    overflow-x:hidden;   /* hides horizontal scrollbar on newer browsers */
-}
- 
-iframe#embed {
-    width:130%;       /* set this to approximate width of entire page you're embedding */
-    height:550px;      /* determines where the bottom of the page cuts off */
-    margin-left: -14%; /* clipping left side of page */
-    margin-top: -234px;  /* clipping top of page */
-    overflow:hidden;
-
-    /* resize seems to inherit in at least Firefox */
-    -webkit-resize:none;
-    -moz-resize:none;
-    resize:none;
-}
-
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 85%;
-}
-
-.seperator {
-  height: 50px !important;
-  box-shadow: 0 0 0 0 white !important;
-}
-
-td {
-  text-align: center;
-}
-
-iframe {
-  border: none !important;
-}
-
-th {
-  background-color: rgba(255, 162, 0, 0.9);
-  text-align: center;
-  font-size:25px;
-  padding: 10px;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
-}
-
-a {
-  text-decoration: none;
-    color: rgba(0,0,0,.87) ;
-      font-family: 'Spartan', sans-serif;
-}
-
-tr {
-    box-shadow: 2px 2px 12px 4px rgba(0,0,0,0.10);
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-}
-
-tr:nth-child(even) {
-  background-color: #FFFFFF;
-}
-
-h1 {
-  text-align: left;
-  height: 50px;
-  font-size: 40px;
-  margin-bottom: 0px;
-}
-
-h5 {
-  color: rgba(0,0,0,.56);
-  margin-top: 7px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-around;
-}
-
-.blinking {
-  -webkit-animation: 1s blink ease infinite;
-  -moz-animation: 1s blink ease infinite;
-  -ms-animation: 1s blink ease infinite;
-  -o-animation: 1s blink ease infinite;
-  animation: 1s blink ease infinite;
-  
-}
-
-@keyframes "blink" {
-  from, to {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes blink {
-  from, to {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes "blink" {
-  from, to {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-@-ms-keyframes "blink" {
-  from, to {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes "blink" {
-  from, to {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-.inline-block-child {
-  display: inline-block;
-  margin-top: 10px;
-}
-
-.zoom {
-  transition: transform .3s; /* Animation */
-}
-
-.zoom:hover {
-  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
-.alignleft {
-  float: left;
-  width:33.33333%;
-  text-align:left;
-}
-
-.aligncenter {
-  float: left;
-  width:33.33333%;
-  text-align:center;
-}
-}
-	
 div#container
 {
     width:100%;
@@ -177,9 +14,9 @@ div#container
 iframe#embed
 {
     width:130%;       /* set this to approximate width of entire page you're embedding */
-    height:800px;      /* determines where the bottom of the page cuts off */
+    height:550px;      /* determines where the bottom of the page cuts off */
     margin-left: -14%; /* clipping left side of page */
-    margin-top: -485px;  /* clipping top of page */
+    margin-top: -234px;  /* clipping top of page */
     overflow:hidden;
 
     /* resize seems to inherit in at least Firefox */
@@ -342,8 +179,8 @@ h5 {
    <div class='zoom child inline-block-child'><a href="https://www.youtube.com/" target="_blank"><img src="YouTube.png"></a></div><div class='zoom child inline-block-child'><a href="https://www.twitch.tv/kevin_l_wright" target="_blank"><img src="Twitch.png"></a></div>
 </div>
   <div>
-<h1  size= "6">March 17th Primaries</h1>
-<h5 align="center">All the results...in one place! <h5>
+<h1  size= "6">March 3rd Primaries</h1>
+<h5>All the results...in one place! <h5>
     </div>
     <div class='child inline-block-child'>
 <h1><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -372,7 +209,7 @@ h5 {
 	  </th>
     </tr>
     <tr>
-      <td align="center" width="50%"><iframe src="https://interactives.ap.org/primary-elections-2020-03-17/?site=thenewyorker&STATE=AZ&OFFICE=P" style="width:100%;height:859.8px;"></iframe></td>
+      <td align="center" width="50%"><iframe src="https://interactives.ap.org/primary-elections-2020-03-17/?site=thenewyorker&STATE=AZ&OFFICE=P" style="width:100%;height:846px;"></iframe></td>
     </tr>
     <tr class="seperator"></tr>
     <tr>
@@ -382,7 +219,7 @@ h5 {
 	  </th>
     </tr>
     <tr>
-      <td align="center" width="50%"><iframe src="https://interactives.ap.org/primary-elections-2020-03-17/?site=thenewyorker&STATE=FL&OFFICE=P" style="width:100%;height:782.6px;"></iframe></td>
+      <td align="center" width="50%"><iframe src="https://interactives.ap.org/primary-elections-2020-03-17/?site=thenewyorker&STATE=FL&OFFICE=P" style="width:100%;height:807.4px;"></iframe></td>
     </tr>
     <tr class="seperator"></tr>
     <tr>
@@ -392,7 +229,7 @@ h5 {
 	  </th>
     </tr>
     <tr>
-      <td align="center" width="50%"><iframe src="https://interactives.ap.org/primary-elections-2020-03-17/?site=thenewyorker&STATE=IL&OFFICE=P" style="width:100%;height:666.80px;"></iframe></td>
+      <td align="center" width="50%"><iframe src="https://interactives.ap.org/primary-elections-2020-03-17/?site=thenewyorker&STATE=IL&OFFICE=P" style="width:100%;height:660.80px;"></iframe></td>
     </tr>
     <tr class="seperator"></tr>
     <tr>
@@ -402,7 +239,7 @@ h5 {
 	  </th>
     </tr>
 	<tr>
-      <td align="center" width="50%"><iframe src="https://interactives.ap.org/primary-elections-2020-03-17/?site=thenewyorker&STATE=OH&OFFICE=P" style="width:100%;height:591.35px;"></iframe></td>
+      <td align="center" width="50%"><iframe src="https://interactives.ap.org/primary-elections-2020-03-17/?site=thenewyorker&STATE=OH&OFFICE=P" style="width:100%;height:1077.6px;"></iframe></td>
     </tr>
 </table>
 
