@@ -14,6 +14,21 @@ div#container
 iframe#embed
 {
     width:130%;       /* set this to approximate width of entire page you're embedding */
+    height:800px;      /* determines where the bottom of the page cuts off */
+    margin-left: -14%; /* clipping left side of page */
+    margin-top: -485px;  /* clipping top of page */
+    overflow:hidden;
+
+    /* resize seems to inherit in at least Firefox */
+    -webkit-resize:none;
+    -moz-resize:none;
+    resize:none;
+}
+
+@media (min-width: 1281px) {
+  iframe#embed
+{
+    width:130%;       /* set this to approximate width of entire page you're embedding */
     height:550px;      /* determines where the bottom of the page cuts off */
     margin-left: -14%; /* clipping left side of page */
     margin-top: -234px;  /* clipping top of page */
