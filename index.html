@@ -9,27 +9,12 @@
 div#container
 {
     width:100%;
-    height:200px;
+    height: 200px;
     overflow:hidden;     /* if you don't want a scrollbar, set to hidden */
     overflow-x:hidden;   /* hides horizontal scrollbar on newer browsers */
 }
 
 iframe#embed
-{
-    width:130%;       /* set this to approximate width of entire page you're embedding */
-    height:800px;      /* determines where the bottom of the page cuts off */
-    margin-left: -14%; /* clipping left side of page */
-    margin-top: -473px;  /* clipping top of page */
-    overflow:hidden;
-
-    /* resize seems to inherit in at least Firefox */
-    -webkit-resize:none;
-    -moz-resize:none;
-    resize:none;
-}
-
-@media only screen and (min-width: 945px) {
-  iframe#embed
 {
     width:130%;       /* set this to approximate width of entire page you're embedding */
     height:550px;      /* determines where the bottom of the page cuts off */
@@ -41,7 +26,6 @@ iframe#embed
     -webkit-resize:none;
     -moz-resize:none;
     resize:none;
-}
 }
 
 table {
@@ -98,7 +82,7 @@ h1 {
 h5 {
   color: rgba(0,0,0,.56);
   margin-top: 7px;
-{
+}
 
 .header {
   display: flex;
@@ -171,7 +155,7 @@ h5 {
 .zoom:hover {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-	
+
 .alignleft {
   float: left;
   width:33.33333%;
@@ -189,17 +173,25 @@ h5 {
 
 <div class="header">
 <div class='parent' margin-top="7px">
+   <div class='child inline-block-child'>
+      <svg height="80" width="80" class="blinking">
+         <circle cx="50" cy="50" r="10" fill="red" />
+         Sorry, your browser does not support inline SVG.  
+      </svg>
+   </div>
+   <div class='zoom child inline-block-child'><a href="https://www.youtube.com/" target="_blank"><img src="YouTube.png"></a></div><div class='zoom child inline-block-child'><a href="https://www.twitch.tv/kevin_l_wright" target="_blank"><img src="Twitch.png"></a></div>
+</div>
   <div>
-<h1  size= "6">Super Tuesday</h1>
+<h1  size= "6">March 17th Primaries</h1>
 <h5>All the results...in one place! <h5>
     </div>
-    <div>
-<h3 align=""><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <div class='child inline-block-child'>
+<h1><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick" />
 <input type="hidden" name="hosted_button_id" value="VSS58BU6ULQ76" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
 <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-</form></h3>
+</form></h1>
 </div>
 </div>
 
